@@ -1,0 +1,5 @@
+young	myope	yes	normal	hard
+young	hyper	yes	normal	hard
+pre	hyper	yes	normal	no lenses
+presbyopic	myope	yes	reduced	no lenses
+presbyopic	hyper	yes	normal	no lenses
