@@ -1,10 +1,10 @@
 # Machine-Learning-in-Action
-All my source code written when reading the book "Machine Learning in Action" are stored here. With (probably) my comments for each chapter in each folder.
+我将自己在阅读《机器学习实战》过程中写的源代码放在这里。每个文件夹里也（可能）附有一点简单的笔记。
 
-## Progress
+## 进度
 1. [x] Ch02 - Classifying with k-Nearest Neighbors
 2. [x] Ch03 - Splitting datasets one feature at a time: decision trees
-3. [ ] Ch04 - Classifying with probability theory: naive Bayes
+3. [x] Ch04 - Classifying with probability theory: naive Bayes
 4. [ ] Ch05 - Logistic regression
 5. [ ] Ch06 - Support vector machines
 6. [ ] Ch07 - Improving classification with the AdaBoost meta-algorithm
