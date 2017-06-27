@@ -1,6 +1,5 @@
 import numpy as np
 import logistic
-import plot2D
 
 def createDataSet(filename):
     file = open(filename, 'r')
@@ -11,7 +10,7 @@ def createDataSet(filename):
     for line in lines:
         data = line.split()
         dataSet.append([1] + list(map(float, data[:-1])))
-        labels.append([int(data[-1])])
+        labels.append([int(float(data[-1]))])
 
     return np.matrix(dataSet), np.array(labels)
 
@@ -26,15 +25,7 @@ def calcResult(dataSet, labels, theta):
             correct += 1
     print('Correctness: %d/%d = %.2f%%' % (correct, len(res), correct/len(res)*100))
 
-    # Plot data
-    plot2D.plotData(dataSet, labels, theta)
-
-dataSet, labels = createDataSet('data/tryLogistic/data.txt')
-
-# Normal gradient descent
-theta = logistic.gradientDescent(dataSet, labels)
-calcResult(dataSet, labels, theta)
-
-# Random gradient descent
-theta = logistic.randGradientDescent(dataSet, labels)
-calcResult(dataSet, labels, theta)
+trainingSet, trainingLabels = createDataSet('data/horse/training.txt')
+testSet, testLabels = createDataSet('data/horse/test.txt')
+theta = logistic.gradientDescent(trainingSet, trainingLabels, 5000, 0.0005)
+calcResult(testSet, testLabels, theta)

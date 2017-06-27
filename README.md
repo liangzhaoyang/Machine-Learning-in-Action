@@ -5,7 +5,7 @@
 1. [x] Ch02 - Classifying with k-Nearest Neighbors
 2. [x] Ch03 - Splitting datasets one feature at a time: decision trees
 3. [x] Ch04 - Classifying with probability theory: naive Bayes
-4. [ ] Ch05 - Logistic regression
+4. [x] Ch05 - Logistic regression
 5. [ ] Ch06 - Support vector machines
 6. [ ] Ch07 - Improving classification with the AdaBoost meta-algorithm
 7. [ ] Ch08 - Predicting numeric values: regression
