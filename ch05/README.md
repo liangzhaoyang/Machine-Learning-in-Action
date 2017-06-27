@@ -27,9 +27,11 @@
 在两个特征的训练集上，分类结果看起来非常不错。
 
 ![gradient descent result](screenshot/gradientDescent.png)
+
 ^ 普通梯度下降结果
 
-![random gradient descent result](screenshot/randomGradientDescent.png)
+![random gradient descent result](screenshot/randGradientDescent.png)
+
 ^ 随机梯度下降结果
 
 不过在病马的数据集上准确率只有 77% 上下，按书中的说法是由于部分数据的部分特征缺失，用特殊值补进去的结果...
