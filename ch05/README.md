@@ -1,37 +1,37 @@
-# Logistic »Ø¹é
-£¨¾İËµÖĞÎÄÆäÊµ²»ÊÇ¡°Âß¼­»Ø¹é¡±£©
+# Logistic å›å½’
+ï¼ˆæ®è¯´ä¸­æ–‡å…¶å®ä¸æ˜¯â€œé€»è¾‘å›å½’â€ï¼‰
 
-## Ô­Àí
-ÊéÖĞÊ¹ÓÃ Logistic »Ø¹é½â¾ö¶ş·ÖÀàÎÊÌâ¡£ÉèÁ½ÖÖÀà±ğ·Ö±ğÎª 0 ºÍ 1£¬Logistic »Ø¹éÈÏÎªÑù±¾ÊôÓÚÀà±ğ 1 µÄ¸ÅÂÊ ![\\inline P\(y=1|x,\\theta\) = \\text{sigmoid}\(x\\theta\)](http://latex.codecogs.com/png.latex?%5Cinline%20P%28y%3D1|x%2C%5Ctheta%29%20%3D%20%5Ctext{sigmoid}%28x%5Ctheta%29)¡£ÆäÖĞ ![\\inline \\text{sigmoid}\(x\) = \\frac{1}{1+e^{-x}}](http://latex.codecogs.com/png.latex?%5Cinline%20%5Ctext{sigmoid}%28x%29%20%3D%20%5Cfrac{1}{1%2Be^{-x}})£¬![\\inline x=\(x_0,x_1,x_2,\\dots,x_m\)](http://latex.codecogs.com/png.latex?%5Cinline%20x%3D%28x_0%2Cx_1%2Cx_2%2C%5Cdots%2Cx_m%29) ÊÇÒ»¸öĞĞÏòÁ¿£¬±íÊ¾Ò»¸öÑù±¾µÄ¸÷ÖÖÌØÕ÷µÄÖµ¡£ÎªÁË·½±ãÆğ¼û£¬Éè³£ÊıÏî![\\inline x_0=1](http://latex.codecogs.com/png.latex?%5Cinline%20x_0%3D1)¡£![\\inline \\theta](http://latex.codecogs.com/png.latex?%5Cinline%20%5Ctheta) ÊÇÒ»¸öÁĞÏòÁ¿£¬±íÊ¾Ã¿ÖÖÌØÕ÷¶Ô½á¹ûµÄ¡°È¨ÖØ¡±¡£
+## åŸç†
+ä¹¦ä¸­ä½¿ç”¨ Logistic å›å½’è§£å†³äºŒåˆ†ç±»é—®é¢˜ã€‚è®¾ä¸¤ç§ç±»åˆ«åˆ†åˆ«ä¸º 0 å’Œ 1ï¼ŒLogistic å›å½’è®¤ä¸ºæ ·æœ¬å±äºç±»åˆ« 1 çš„æ¦‚ç‡ ![\\inline P\(y=1|x,\\theta\) = \\text{sigmoid}\(x\\theta\)](http://latex.codecogs.com/png.latex?%5Cinline%20P%28y%3D1|x%2C%5Ctheta%29%20%3D%20%5Ctext{sigmoid}%28x%5Ctheta%29)ã€‚å…¶ä¸­ ![\\inline \\text{sigmoid}\(x\) = \\frac{1}{1+e^{-x}}](http://latex.codecogs.com/png.latex?%5Cinline%20%5Ctext{sigmoid}%28x%29%20%3D%20%5Cfrac{1}{1%2Be^{-x}})ï¼Œ![\\inline x=\(x_0,x_1,x_2,\\dots,x_m\)](http://latex.codecogs.com/png.latex?%5Cinline%20x%3D%28x_0%2Cx_1%2Cx_2%2C%5Cdots%2Cx_m%29) æ˜¯ä¸€ä¸ªè¡Œå‘é‡ï¼Œè¡¨ç¤ºä¸€ä¸ªæ ·æœ¬çš„å„ç§ç‰¹å¾çš„å€¼ã€‚ä¸ºäº†æ–¹ä¾¿èµ·è§ï¼Œè®¾å¸¸æ•°é¡¹![\\inline x_0=1](http://latex.codecogs.com/png.latex?%5Cinline%20x_0%3D1)ã€‚![\\inline \\theta](http://latex.codecogs.com/png.latex?%5Cinline%20%5Ctheta) æ˜¯ä¸€ä¸ªåˆ—å‘é‡ï¼Œè¡¨ç¤ºæ¯ç§ç‰¹å¾å¯¹ç»“æœçš„â€œæƒé‡â€ã€‚
 
-Éè¹²ÓĞ ![n](http://latex.codecogs.com/png.latex?n) ¸öÑµÁ·Ñù±¾£¬Ã¿¸öÑù±¾ÓĞ ![m](http://latex.codecogs.com/png.latex?m) ÖÖÌØÕ÷¡£Éè ![\\inline P\(y=1|x,\\theta\) = h](http://latex.codecogs.com/png.latex?%5Cinline%20P%28y%3D1|x%2C%5Ctheta%29%20%3D%20h)£¬Logistic »Ø¹éÈÏÎªËùÓĞÑµÁ·Ñù±¾µÄ´ú¼Ûº¯ÊıÎª
+è®¾å…±æœ‰ ![n](http://latex.codecogs.com/png.latex?n) ä¸ªè®­ç»ƒæ ·æœ¬ï¼Œæ¯ä¸ªæ ·æœ¬æœ‰ ![m](http://latex.codecogs.com/png.latex?m) ç§ç‰¹å¾ã€‚è®¾ ![\\inline P\(y=1|x,\\theta\) = h](http://latex.codecogs.com/png.latex?%5Cinline%20P%28y%3D1|x%2C%5Ctheta%29%20%3D%20h)ï¼ŒLogistic å›å½’è®¤ä¸ºæ‰€æœ‰è®­ç»ƒæ ·æœ¬çš„ä»£ä»·å‡½æ•°ä¸º
 
 ![L = -\\frac{1}{n}\\sum_{i=1}^n\(y_i\\text{log}\(h\)+\(1-y_i\)\\text{log}\(1-h\)\)](http://latex.codecogs.com/png.latex?L%20%3D%20-%5Cfrac{1}{n}%5Csum_{i%3D1}^n%28y_i%5Ctext{log}%28h%29%2B%281-y_i%29%5Ctext{log}%281-h%29%29)
 
-Èç¹ûºÍÏßĞÔ»Ø¹éÒ»ÑùÈ¡Æ½·½º¯Êı×ö´ú¼Ûº¯Êı£¬»áµ¼ÖÂ´ú¼Ûº¯Êı·ÇÍ¹£¬²»ºÃÓÅ»¯¡£
+å¦‚æœå’Œçº¿æ€§å›å½’ä¸€æ ·å–å¹³æ–¹å‡½æ•°åšä»£ä»·å‡½æ•°ï¼Œä¼šå¯¼è‡´ä»£ä»·å‡½æ•°éå‡¸ï¼Œä¸å¥½ä¼˜åŒ–ã€‚
 
-Ê¹ÓÃÌİ¶ÈÏÂ½µ·¨ÓÅ»¯´ú¼Ûº¯Êı¡£°Ñ ![h](http://latex.codecogs.com/png.latex?h) Õ¹¿ª£¬³¢ÊÔ¶Ô´ú¼Ûº¯ÊıÖĞµÄÄ³Ò»¸ö±äÁ¿ ![x_j](http://latex.codecogs.com/png.latex?x_j) Çóµ¼£¬»á·¢ÏÖ·Ç³£Æ¯ÁÁµÄ½á¹û¡£
+ä½¿ç”¨æ¢¯åº¦ä¸‹é™æ³•ä¼˜åŒ–ä»£ä»·å‡½æ•°ã€‚æŠŠ ![h](http://latex.codecogs.com/png.latex?h) å±•å¼€ï¼Œå°è¯•å¯¹ä»£ä»·å‡½æ•°ä¸­çš„æŸä¸€ä¸ªå˜é‡ ![x_j](http://latex.codecogs.com/png.latex?x_j) æ±‚å¯¼ï¼Œä¼šå‘ç°éå¸¸æ¼‚äº®çš„ç»“æœã€‚
 
 ![\(y_i\\text{log}\(h\)\)' = y_i\(1-h\)x_j](http://latex.codecogs.com/png.latex?%28y_i%5Ctext{log}%28h%29%29%27%20%3D%20y_i%281-h%29x_j)
 
 ![\(\(1-y_i\)\\text{log}\(1-h\)\)' = \(y_i-1\)hx_j](http://latex.codecogs.com/png.latex?%28%281-y_i%29%5Ctext{log}%281-h%29%29%27%20%3D%20%28y_i-1%29hx_j) 
 
-Ïà¼Ó¼´¿ÉµÃµ½´ú¼Ûº¯ÊıµÄÌİ¶È
+ç›¸åŠ å³å¯å¾—åˆ°ä»£ä»·å‡½æ•°çš„æ¢¯åº¦
 
 ![L' = -\\frac{1}{n}\\sum_{i=1}^n\\sum_{j=1}^m\(y_i-h\)x_j](http://latex.codecogs.com/png.latex?L%27%20%3D%20-%5Cfrac{1}{n}%5Csum_{i%3D1}^n%5Csum_{j%3D1}^m%28y_i-h%29x_j)
 
-ÊÇÒ»¸ö·Ç³£Æ¯ÁÁµÄÌİ¶È£¬ÓÃËüÀ´×öÌİ¶ÈÏÂ½µºÍËæ»úÌİ¶ÈÏÂ½µ¼´¿É¡£
+æ˜¯ä¸€ä¸ªéå¸¸æ¼‚äº®çš„æ¢¯åº¦ï¼Œç”¨å®ƒæ¥åšæ¢¯åº¦ä¸‹é™å’Œéšæœºæ¢¯åº¦ä¸‹é™å³å¯ã€‚
 
-## Ó¦ÓÃ
+## åº”ç”¨
 
-ÔÚÁ½¸öÌØÕ÷µÄÑµÁ·¼¯ÉÏ£¬·ÖÀà½á¹û¿´ÆğÀ´·Ç³£²»´í¡£
+åœ¨ä¸¤ä¸ªç‰¹å¾çš„è®­ç»ƒé›†ä¸Šï¼Œåˆ†ç±»ç»“æœçœ‹èµ·æ¥éå¸¸ä¸é”™ã€‚
 
 ![gradient descent result](screenshot/gradientDescent.png)
 
-^ ÆÕÍ¨Ìİ¶ÈÏÂ½µ½á¹û
+^ æ™®é€šæ¢¯åº¦ä¸‹é™ç»“æœ
 
 ![random gradient descent result](screenshot/randGradientDescent.png)
 
-^ Ëæ»úÌİ¶ÈÏÂ½µ½á¹û
+^ éšæœºæ¢¯åº¦ä¸‹é™ç»“æœ
 
-²»¹ıÔÚ²¡ÂíµÄÊı¾İ¼¯ÉÏ×¼È·ÂÊÖ»ÓĞ 77% ÉÏÏÂ£¬°´ÊéÖĞµÄËµ·¨ÊÇÓÉÓÚ²¿·ÖÊı¾İµÄ²¿·ÖÌØÕ÷È±Ê§£¬ÓÃÌØÊâÖµ²¹½øÈ¥µÄ½á¹û...
+ä¸è¿‡åœ¨ç—…é©¬çš„æ•°æ®é›†ä¸Šå‡†ç¡®ç‡åªæœ‰ 77% ä¸Šä¸‹ï¼ŒæŒ‰ä¹¦ä¸­çš„è¯´æ³•æ˜¯ç”±äºéƒ¨åˆ†æ•°æ®çš„éƒ¨åˆ†ç‰¹å¾ç¼ºå¤±ï¼Œç”¨ç‰¹æ®Šå€¼è¡¥è¿›å»çš„ç»“æœ...
